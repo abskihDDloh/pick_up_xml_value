@@ -33,3 +33,9 @@ pub fn get_last_vec_element(src: &Vec<String>) -> Result<String, Box<dyn Error>>
         }
     }
 }
+
+/// Vec<&str>をVec<String>に変換します。
+/// 例: vec!["a", "b", "c"] -> vec!["a".to_string(), "b".to_string(), "c".to_string()]
+pub fn string_vec(str_vec: Vec<&str>) -> Vec<String> {
+    str_vec.iter().map(|x| x.to_string()).collect()
+}

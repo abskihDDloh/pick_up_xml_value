@@ -123,7 +123,8 @@ mod tests {
     use log::{error, info};
 
     use crate::reader::{
-        tag_value::TagValue, tag_value_type::TagValueType, xml_read_config::XmlTagReadConfig,
+        tag_value::TagValue, tag_value_type::TagValueType, util::string_vec,
+        xml_read_config::XmlTagReadConfig,
     };
 
     use super::*;
@@ -131,10 +132,6 @@ mod tests {
     const XML_FILE: &str = "test_xml/sample1.xml";
 
     const DUMP_FLAG: bool = true;
-
-    fn string_vec(str_vec: Vec<&str>) -> Vec<String> {
-        str_vec.iter().map(|x| x.to_string()).collect()
-    }
 
     fn display_output_values(
         out_put_values: &[Vec<OutPutTagValue>],

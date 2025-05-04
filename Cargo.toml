@@ -1,6 +1,6 @@
 [package]
 name = "pick_up_xml_value"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2024"
 
 [dependencies]
