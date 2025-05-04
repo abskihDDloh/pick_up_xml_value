@@ -112,6 +112,7 @@ impl XmlTagReadConfig {
 /// `XmlReadConfig`は、XMLタグのグループ化設定を表します。
 ///
 /// この構造体は、複数のタグ階層に関連付けられた読み取り設定を管理します。
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct XmlReadConfig {
     /// タグ階層をキー、XMLタグ読み取り設定を値とするハッシュマップ
     tag_hierarchy_map: HashMap<Vec<String>, XmlTagReadConfig>,
