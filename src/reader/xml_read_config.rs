@@ -1,7 +1,7 @@
 use std::collections::{HashMap, HashSet};
 
 use super::tag_value_type::TagValueType;
-use pick_up_xml_value::reader::xml_read_config::XmlTagReadConfig;
+use super::reader::xml_read_config::XmlTagReadConfig;
 
 /// `TagValueName`は、XMLタグの値（属性またはテキスト）を表します。
 ///
