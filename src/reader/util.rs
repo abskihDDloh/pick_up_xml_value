@@ -14,7 +14,7 @@ pub(in crate::reader) fn get_elm_name(tag: &BytesTag) -> String {
     }
 }
 
-/// Vec<Sreing>の最後の要素を取得します。
+/// Vec<String>の最後の要素を取得します。
 /// 取得できない場合はエラーを返します。
 pub fn get_last_vec_element(src: &Vec<String>) -> Result<String, Box<dyn Error>> {
     let s = src.last();
