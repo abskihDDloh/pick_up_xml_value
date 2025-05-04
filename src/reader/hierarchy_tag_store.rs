@@ -31,19 +31,6 @@ impl TagHierarchyStore {
     /// - キーが `tag_store` に存在する場合、その値への可変参照を返します。
     /// - キーが存在しない場合は、`OutPutTagValue::default()` を使用して新しい値を作成し、`set_tag_hitrarchy()` を呼び出してタグ階層を設定した後、`tag_store` に挿入します。
     ///
-    /// # 使用例
-    /// ```
-    /// let mut store = TagHierarchyStore::new();
-    /// let key = vec!["level1".to_string(), "level2".to_string()];
-    ///
-    /// // キーが存在しない場合、新しい値を作成して挿入
-    /// let value = store.get_mut(&key);
-    /// assert!(value.is_some());
-    ///
-    /// // キーが存在する場合、既存の値への参照を取得
-    /// let existing_value = store.get_mut(&key);
-    /// assert!(existing_value.is_some());
-    /// ```
     pub(in crate::reader) fn get_mut(&mut self, key: &Vec<String>) -> Option<&mut OutPutTagValue> {
         if self.tag_store.contains_key(key) {
             return self.tag_store.get_mut(key);
