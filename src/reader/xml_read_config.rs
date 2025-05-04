@@ -1,6 +1,6 @@
 use std::collections::{HashMap, HashSet};
 
-use reader::tag_value_type::TagValueType;
+use super::tag_value_type::TagValueType;
 
 /// `TagValueName`は、XMLタグの値（属性またはテキスト）を表します。
 ///
