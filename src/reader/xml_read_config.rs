@@ -20,10 +20,6 @@ impl TagValueName {
     /// # 戻り値
     /// - タグテキストを表す`TagValueName`インスタンス
     ///
-    /// # 使用例
-    /// ```
-    /// let tag_text = TagValueName::new_tag_text();
-    /// ```
     pub fn new_tag_text() -> Self {
         TagValueName {
             value_type: TagValueType::TagText,
@@ -39,10 +35,6 @@ impl TagValueName {
     /// # 戻り値
     /// - 属性値を表す`TagValueName`インスタンス
     ///
-    /// # 使用例
-    /// ```
-    /// let attribute = TagValueName::new_attribute("id".to_string());
-    /// ```
     pub fn new_attribute(name: String) -> Self {
         TagValueName {
             value_type: TagValueType::AttributeValue,
@@ -88,13 +80,6 @@ impl XmlTagReadConfig {
     /// # 戻り値
     /// - 新しい`XmlTagReadConfig`インスタンス
     ///
-    /// # 使用例
-    /// ```
-    /// use std::collections::HashSet;
-    /// let tag_hierarchy = vec!["root".to_string(), "child".to_string()];
-    /// let target_names = HashSet::new();
-    /// let config = XmlTagReadConfig::new(tag_hierarchy, target_names);
-    /// ```
     pub fn new(tag_hierarchy: Vec<String>, target_tag_value_names: HashSet<TagValueName>) -> Self {
         XmlTagReadConfig {
             tag_hierarchy,
