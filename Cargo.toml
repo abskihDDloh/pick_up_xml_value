@@ -1,0 +1,9 @@
+[package]
+name = "pick_up_xml_value"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+log = "0.4.27"
+quick-xml = "0.37.5"
+test-log = "0.2.17"

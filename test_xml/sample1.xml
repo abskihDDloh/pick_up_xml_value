@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv generator-info-name="tsEPG2xml" generator-info-url="http://localhost/">
+  <channel id="GR2_1032" transport_stream_id="32737" original_network_id="32737" service_id="1032" tp="26">
+    <display-name lang="ja_JP">CHANNEL_NAME_1_1</display-name>
+  </channel>
+  <channel id="GR2_1034" transport_stream_id="32737" original_network_id="32737" service_id="1034" tp="26">
+    <display-name lang="ja_JP">CHANNEL_NAME_1_2</display-name>
+  </channel>
+  <programme start="20241123090000 +0900" stop="20241123092000 +0900" channel="GR2_1032" event_id="32665" duration="1200">
+    <title lang="ja_JP">TITLE_1_1</title>
+    <desc lang="ja_JP">DESC_1</desc>
+    <category lang="ja_JP">CAT_1</category>
+    <category lang="en">CAT_2</category>
+    <category_middle lang="ja_JP">CAT_MID1</category_middle>
+    <category_middle lang="en">CAT_MID2</category_middle>
+    <freeCA>0</freeCA>
+    <video id="179">
+      <resolution>HD</resolution>
+      <aspect>16:9</aspect>
+    </video>
+    <audio id="3">
+      <desc>ステレオ</desc>
+      <lang>jpn</lang>
+      <extdesc/>
+    </audio>
+    <extdesc>
+      <item_description>EXT_DESC_ITEM_NAME_1</item_description>
+      <item>EXT_DESC_ITEM_1</item>
+      <item_description>EXT_DESC_ITEM_NAME_2</item_description>
+      <item>EXT_DESC_ITEM_2</item>
+      <item_description>EXT_DESC_ITEM_NAME_3</item_description>
+      <item>EXT_DESC_ITEM_2</item>
+    </extdesc>
+  </programme>
+    <programme start="20241123090000 +0900" stop="20241123092000 +0900" channel="GR2_1032" event_id="32666" duration="1200">
+    <title lang="ja_JP">TITLE_1_2</title>
+    <desc lang="ja_JP">DESC_1</desc>
+    <category lang="ja_JP">CAT_1</category>
+    <category lang="en">CAT_2</category>
+    <category_middle lang="ja_JP">CAT_MID1</category_middle>
+    <category_middle lang="en">CAT_MID2</category_middle>
+    <freeCA>0</freeCA>
+    <video id="179">
+      <resolution>HD</resolution>
+      <aspect>16:9</aspect>
+    </video>
+    <audio id="3">
+      <desc>ステレオ</desc>
+      <lang>jpn</lang>
+      <extdesc/>
+    </audio>
+    <extdesc>
+      <item_description>EXT_DESC_ITEM_NAME_1</item_description>
+      <item>EXT_DESC_ITEM_1</item>
+      <item_description>EXT_DESC_ITEM_NAME_2</item_description>
+      <item>EXT_DESC_ITEM_2</item>
+      <item_description>EXT_DESC_ITEM_NAME_3</item_description>
+      <item>EXT_DESC_ITEM_2</item>
+    </extdesc>
+  </programme>
+ </tv>
